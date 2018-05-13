@@ -1,0 +1,110 @@
+﻿<html>
+<head>
+		
+		<meta charset="utf-8" />
+		<title>Dyktator</title>
+		
+		<meta name="descripton" content="Biuro podróży Dyktator" />
+		<meta name="keywords" content="biuro, podróże, wakacje, wyjazd" />
+		<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet"> 
+		
+</head>
+
+<body>
+
+	<div class="wrapper">
+	
+	
+		<div class="header">
+				
+				<div class="logo">
+					<span style="color: #B31412;" text-align: Center>Biuro podróży</span><span style="color: white;"> Dyktator</span> 
+					<div style="clear:both;"></div>
+				</div>
+				
+		</div>
+		<div class="pasek"></div> 
+		<div class="nav">
+
+			<ol>
+					
+					<li><a href="index.html">Strona głowna</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="oferta.html">Oferta</a>
+						<ul>
+								<li><a href="chernobyl.html">Czarnobyl</a></li>
+								<li><a href="korea.html">Korea Płn</a></li>
+						</ul>
+						</li>
+			</ol>
+		
+		</div>	
+			
+			
+		<div class="content">
+			<h1>Witamy w biurze podróży "Dyktator"!</h1></br>
+			<h2>Mamy do zaoferowania ciekawe wakacje w wyjątkowo niskich cenach.</h2></br>
+			<h2>Nie czekaj rezerwuj już dziś!</h2></br>
+			<h2>Tylko teraz wszystkie wycieczki o połowę taniej.</h2></br></br>
+		</div>	
+		<div class="socials">
+			<div class="socialdivs">
+			
+			<a href="https://www.facebook.com/" target="blank">
+				<div class="fbook"><i class="icon-facebook"></i></div>
+			</a>
+			
+			<a href="https://store.steampowered.com/" target="blank">
+				<div class="steam"><i class="icon-steam"></i></div>
+			</a>
+			
+			<a href="https://www.instagram.com/" target="blank">
+				<div class="insta"><i class="icon-instagram"></i></div>
+			</a>		
+			<a href="mailto:demetrio.bryceson@0nes.net" target="blank">
+				<div class="gmail"><i class="icon-mail"></i></div>
+			</a>
+			
+				<div style="clear:both;"></div>
+			
+			</div>
+		</div>
+		<div class="footer">
+		Biuro podróży "Dyktator" życzy miłego wypoczynku
+		</div>
+		
+		
+		<script src="jquery-3.1.1.min.js"></script>
+
+		<script>
+
+			$(document).ready(function() {
+			var stickyNavTop = $('.nav').offset().top;
+
+			var stickyNav = function(){
+			var scrollTop = $(window).scrollTop();
+
+			if (scrollTop > stickyNavTop) { 
+			$('.nav').addClass('sticky');
+			$('.pasek').addClass('aktywny');
+			} else {
+			$('.nav').removeClass('sticky');
+			$('.pasek').removeClass('aktywny');
+			}
+			};
+
+			stickyNav();
+
+			$(window).scroll(function() {
+			stickyNav();
+			});
+			});
+
+		</script>
+		
+</body>
+</html>
+		
